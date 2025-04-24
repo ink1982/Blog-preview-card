@@ -24,6 +24,7 @@
 		<style>
 			:root {
 				--Yellow: hsl(47, 88%, 63%);
+				--Yellow-active: hsl(47, 84%, 53%);
 				--White: hsl(0, 0%, 100%);
 				--Gray-500: hsl(0, 0%, 42%);
 				--Gray-950: hsl(0, 0%, 7%);
@@ -85,6 +86,13 @@
 				color: var(--Gray-950);
 				border-radius: 4px;
 				margin-bottom: 0.75rem;
+				transition: background-color 0.3s ease, transform 0.3s ease;
+			}
+			.card__link:hover,
+			.card__link:focus,
+			.card__link:active,
+			.card__link.error {
+				background-color: var(--Yellow-active);
 			}
 			.card__published {
 				display: block;
