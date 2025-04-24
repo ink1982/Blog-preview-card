@@ -63,6 +63,7 @@
 				justify-content: center;
 				align-items: center;
 				min-height: 100vh;
+				padding: 0 1.5rem;
 			}
 			.card__wrapper {
 				max-width: 384px;
@@ -136,6 +137,25 @@
 				font-size: 0.875rem;
 				line-height: 1.5;
 				color: var(--Gray-950);
+			}
+			@media (max-width: 375px) {
+				.card__link,
+				.card__published {
+					font-size: 0.75rem;
+				}
+				.card__title h2 {
+					font-size: 1.25rem;
+				}
+				.card__text {
+					font-size: 0.875rem;
+				}
+				.card__mentor-img {
+					width: 32px;
+					height: 32px;
+				}
+				.card__mentor-name {
+					font-size: 0.875rem;
+				}
 			}
 		</style>
 	</head>
